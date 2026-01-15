@@ -48,6 +48,7 @@ public class pp3 {
             System.out.println("Encrypted number:");
             for (int i = 0; i < arr.length; i++)
                 System.out.print(arr[i]);
+            System.out.println();
         }
     }
 }

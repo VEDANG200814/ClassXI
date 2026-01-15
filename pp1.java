@@ -23,20 +23,29 @@ class pp1 {
 
     boolean isAdam(int n) {
         int sq = n * n, sq1 = reverse(sq), n1 = reverse(n), sqr = n1 * n1;
-        if (n1 == n && sq1 == sqr)
+        if (sq1 == sqr)
             return true;
         return false;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int n = sc.nextInt();
+        System.out.println("Enter a the starting and the ending values");
+        int m = sc.nextInt();
+        int n = sc.nextInt(), c = 0;
         pp1 ob = new pp1();
-        if (ob.isPrime(n) && ob.isAdam(n)) {
-            System.out.println(n + " is a PrimeAdam number");
-        } else
-            System.out.println(n + " is a not PrimeAdam number");
+        System.out.println("The Prime-Adam Integers are:");
+        if (m < n) {
+            for (int i = m; i <= n; i++) {
+                if (ob.isAdam(i) && ob.isPrime(i)) {
+                    System.out.print(i + " ");
+                    c++;
+                }
+            }
+            if (c == 0)
+                System.out.println("NIL");
+            System.out.println("\nThe Frequency of Prime-Adam numbers is: " + c);
+        }
         sc.close();
     }
 }
