@@ -10,7 +10,7 @@ public class pp4 {
         char ch = '\0';
         for (int i = 0; i < s.length(); i++) {
             ch = s.charAt(i);
-            if (Character.isLetter(ch) || Character.isWhitespace(ch)) {
+            if (Character.isLetter(ch)) {
                 if (keys[0].indexOf(ch) >= 0)
                     keystrokes += 1;
                 else if (keys[1].indexOf(ch) >= 0)
