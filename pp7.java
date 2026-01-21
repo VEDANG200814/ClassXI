@@ -26,7 +26,7 @@ public class pp7 {
             }
         }
         if (ht.equals("") == false)
-            System.out.println("24-hour clock: " + ht + (m == 0 ? String.valueOf(m) : "00"));
+            System.out.println("24-hour clock: " + ht + (m != 0 ? String.valueOf(m) : "00"));
         else
             System.out.println("Invalid Input!!");
         sc.close();

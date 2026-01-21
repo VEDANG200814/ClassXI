@@ -30,10 +30,11 @@ public class pp6 {
                 }
             }
             System.out.println("Original sentence: " + s);
-            System.out.print("Converted sentence: ");
+            System.out.print("Arranged sentence: ");
             for (int i = 0; i < as.length; i++) {
                 System.out.print(as[i]+" ");
             }
+            System.out.println();
         }
         else
             System.out.println("InvalidInput!!");
