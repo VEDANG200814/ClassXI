@@ -9,6 +9,7 @@ public class pp12 {
             int a[][] = new int[m][n];
             int b[][] = new int[m][n];
             int i, j, l, s = 0;
+            System.out.println("Enter the matrix elements");
             for (i = 0; i < m; i++)
                 for (j = 0; j < n; j++)
                     a[i][j] = sc.nextInt();
