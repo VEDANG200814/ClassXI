@@ -1,6 +1,5 @@
 import java.util.*;
 
-//1089 output
 public class pp2 {
     int freq(String n, char ch) {
         int c = 0;
